@@ -14,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className} bg-slate-800`}>{children}</body>
+      <body
+        className={`${monserrat.className} bg-slate-800 container mx-auto p-4`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

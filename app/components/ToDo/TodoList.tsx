@@ -19,7 +19,7 @@ const TodoList = () => {
   return (
     <ul role="list" className="divide-y divide-gray-100">
       {notes.map((item, index) => (
-        <TodoItem key={index} task={item.description} />
+        <TodoItem id={index + 1} task={item.description} />
       ))}
     </ul>
   );
