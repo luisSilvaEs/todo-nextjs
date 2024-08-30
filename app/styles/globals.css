@@ -1,0 +1,4 @@
+/* I moved this file manully from /app to /app/styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
