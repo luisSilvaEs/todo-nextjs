@@ -1,0 +1,30 @@
+
+.button {
+    @apply border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none;
+}
+
+.link {
+    @apply border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none;
+}
+
+.buttonWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust gap between text and icon */
+}
+
+.up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid white; /* Adjust the color */
+}
+
+.down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid white; /* Adjust the color */
+}
