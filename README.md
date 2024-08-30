@@ -24,6 +24,12 @@ A classic to-do app, but built with Next.js to learn and explore this framework.
 2. Create the repository and push the changes in _main_ branch
 3. Create _develop_ branch from _main_ and the create _create-ui_ branch from _develop_
 4. Create folder structure using **Chat GPT** to avoid messing my head.
+5. Move _global.css_ to _styles_ folder
+   - Remove all content from stylesheet except _tailwind_ imports
+   - Create font.ts file and import font from Google (these fonts are out of the box in Vercel)
+6. Create **TodoItem** and **TodoList** components
+7. Remove all content from /app/page.tsx and import **TodoList** in this file
+   - Layout file does not call componet from page so there is nothing to do here but call new font and clean file. Also added Tailwind class to set body black
 
 ## Run app
 
