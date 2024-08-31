@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+//Schema bellow was provided by ChatGPT to use MongoDB as the provider. I had to provide details of the...
+//fields of a note instance in my collection.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Note {
+  id         String   @id @map("_id") @db.ObjectId // MongoDB ObjectId primary key
+  description String   // Description of the note
+}
+
+//After modifying the schema.prisma file, run the following command to regenerate the Prisma 
+//npx prisma generate
+
+

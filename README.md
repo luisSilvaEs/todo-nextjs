@@ -31,6 +31,15 @@ A classic to-do app, but built with Next.js to learn and explore this framework.
 7. Remove all content from /app/page.tsx and import **TodoList** in this file
    - Layout file does not call componet from page so there is nothing to do here but call new font and clean file. Also added Tailwind class to set body black
 
+### Use Prisma to handle db
+
+1. Install dependencies in project
+
+```bash
+npm install prisma --save-dev
+npx prisma init
+```
+
 ## Run app
 
 Run the development server:

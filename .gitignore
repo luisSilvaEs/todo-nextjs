@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Added this manually to avoid this goes to GitHub and my local database connection does not get exposed
+.env
