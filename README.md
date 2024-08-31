@@ -47,9 +47,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 /todo-app
 │
 ├── /app
-│   ├── /notes
-│   │   ├── page.tsx             # Page to display all notes
-│   │   └── create-note.tsx      # Page with form to create a new note
+│   ├── /newNote
+│   │   └── page.tsx             # Page with form to create a new note
+│   │
 │   ├── /components
 │   │   ├── /Todo
 │   │   │   ├── TodoList.tsx      # Component to list all todos
