@@ -3,6 +3,7 @@ interface FormProps {
   customClasses?: string;
   fields: Array<{
     label?: string;
+    placeholder?: string;
     type: string;
     name: string;
     customClasses: string;
@@ -25,14 +26,15 @@ const Form = ({
             <input
               type={Fld.type}
               name={Fld.name}
-              className={`${customClasses}`}
+              className={`${Fld.customClasses}`}
+              placeholder={Fld.placeholder}
             />
           </>
         ))}
         <div className="flex gap-1 justify-end">
-          {/*buttons.map( Btn, _ ) => (
-
-            )*/}
+          {buttons?.map((Btn, index) => (
+            <div key={index}>{Btn}</div>
+          ))}
         </div>
       </form>
     </>

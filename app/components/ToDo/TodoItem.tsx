@@ -1,4 +1,5 @@
 import { Button } from "./../Button";
+import styles from "./todoItem.module.css";
 
 interface TodoItemProps {
   id: number;
@@ -8,11 +9,11 @@ interface TodoItemProps {
 const TodoItem = ({ id, task }: TodoItemProps) => {
   return (
     <li key={id} className="flex justify-between gap-x-6 py-5">
-      <div className="flex min-w-0 gap-x-4 text-slate-100">
+      <div className="flex min-w-0 gap-x-4">
         <input
           id={`${id}`}
           type="ckeckbox"
-          className="w-5 h-5 cursor-pointer peer"
+          className={`${styles.inputSquare} peer`}
         />
         <label
           htmlFor={`${id}`}
