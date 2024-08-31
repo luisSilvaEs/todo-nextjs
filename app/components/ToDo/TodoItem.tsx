@@ -14,8 +14,12 @@ const TodoItem = ({ id, task }: TodoItemProps) => {
           {task}
         </label>
       </div>
-      <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-        <input id={`${id}`} type="ckeckbox" className="cursor-pointer peer" />
+      <div className="flex items-center">
+        <input
+          id={`${id}`}
+          type="ckeckbox"
+          className="w-5 h-5 cursor-pointer peer"
+        />
       </div>
     </li>
   );
