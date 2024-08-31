@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <TodoList />
-      <Button label="Create note" customClasses="arrow-up" />
+      <Button label="Create note" url="/newNote" customClasses="buttonGlobal" />
     </div>
   );
 }
