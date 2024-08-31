@@ -20,7 +20,7 @@ const Button = ({ label, action, url, customClasses }: PropsButton) => {
           <button
             className={`${customClasses} ${styles.button} ${styles.buttonWithIcon} `}
           >
-            {label ? label + "2" : "Click here"}
+            {label ? label : "Click here"}
             <span
               className={`${
                 (customClasses?.includes("up") && styles.up) ||
@@ -29,7 +29,12 @@ const Button = ({ label, action, url, customClasses }: PropsButton) => {
             ></span>
           </button>
         ) : (
-          <button className={`${customClasses} ${styles.button} `}>
+          <button
+            className={`${customClasses} ${styles.button} `}
+            onClick={(e) => {
+              action;
+            }}
+          >
             {label ? label : "Click here"}
           </button>
         ))}
